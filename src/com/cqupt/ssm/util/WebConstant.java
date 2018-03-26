@@ -2,8 +2,7 @@ package com.cqupt.ssm.util;
 
 /**
  * Constant
- * @author wuMaoZheng
- * @date 2017年11月17日 下午6:43:18
+ * @author Mauger
  * @version V1.0.0
  */
 public class WebConstant 
