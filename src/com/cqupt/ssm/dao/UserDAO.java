@@ -4,8 +4,7 @@ import com.cqupt.ssm.model.User;
 
 /**
  * User数据操作接口
- * @author wuMaoZheng
- * @date 2017年11月17日 下午10:42:55
+ * @author Mauger
  * @version V1.0.0
  */
 public interface UserDAO 
