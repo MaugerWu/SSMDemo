@@ -11,8 +11,7 @@ import com.cqupt.ssm.util.WebConstant;
 
 /**
  * 后台访问拦截器
- * @author wuMaoZheng
- * @date 2017年11月17日 下午11:02:59
+ * @author Mauger
  * @version V1.0.0
  */
 public class WebInterceptor implements HandlerInterceptor
