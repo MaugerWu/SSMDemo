@@ -7,8 +7,7 @@ import com.cqupt.ssm.util.WebConstant;
 
 /**
  * Web后台公共控制器
- * @author wuMaoZheng
- * @date 2017年11月17日 下午6:27:15
+ * @author Mauger
  * @version V1.0.0
  */
 public class WebCommonController 
