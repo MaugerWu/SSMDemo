@@ -9,8 +9,7 @@ import com.cqupt.ssm.service.UserService;
 
 /**
  * User业务逻辑接口实现
- * @author wuMaoZheng
- * @date 2017年11月17日 下午5:54:02
+ * @author Mauger
  * @version V1.0.0
  */
 @Service
