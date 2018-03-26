@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE mapper PUBLIC 
+	"-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="com.cqupt.ssm.dao.UserDAO">
+
+	<resultMap id="userResultMap" type="com.cqupt.ssm.model.User">
+		<result property="id" column="id" jdbcType="INTEGER" javaType="int" />
+		<result property="account" column="account" jdbcType="VARCHAR" javaType="String" />
+		<result property="password" column="password" jdbcType="VARCHAR" javaType="String" />
+		<result property="nickName" column="nick_name" jdbcType="VARCHAR" javaType="String" />
+		<result property="realName" column="real_name" jdbcType="VARCHAR" javaType="String" />
+		<result property="gender" column="gender" jdbcType="BIT" javaType="boolean" />
+		<result property="age" column="age" jdbcType="INTEGER" javaType="int" />
+		<result property="email" column="email" jdbcType="VARCHAR" javaType="String" />
+		<result property="phone" column="phone" jdbcType="VARCHAR" javaType="String" />
+		<result property="createTime" column="create_time" jdbcType="TIMESTAMP" javaType="java.sql.Timestamp" />
+	</resultMap>
+
+	<!-- 新增用户 -->
+	<insert id="addUser" parameterType="com.cqupt.ssm.model.User">
+		INSERT INTO 
+		db_user_info (account, password, nick_name, real_name, gender, age, email, phone, create_time)
+		VALUES(#{account}, #{password}, #{nickName}, #{realName}, #{gender}, #{age}, #{email}, #{phone}, now())
+	</insert>
+
+	<!-- 通过ID查找用户信息 -->
+	<select id="findById" parameterType="int" resultMap="userResultMap">
+		SELECT * FROM db_user_info WHERE id = #{id}
+	</select>
+	
+	<!-- 通过账号查找用户信息 -->
+	<select id="findByAccount" parameterType="String" resultMap="userResultMap">
+		SELECT * FROM db_user_info WHERE account = #{account}
+	</select>
+
+</mapper> 
