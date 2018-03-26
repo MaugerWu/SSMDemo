@@ -5,8 +5,7 @@ import java.util.Date;
 
 /**
  * User数据模型
- * @author wuMaoZheng
- * @date 2017年11月17日 下午6:01:03
+ * @author Mauger
  * @version V1.0.0
  */
 public class User implements Serializable 
