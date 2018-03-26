@@ -4,8 +4,7 @@ import com.cqupt.ssm.model.User;
 
 /**
  * User业务逻辑接口
- * @author wuMaoZheng
- * @date 2017年11月17日 下午5:12:37
+ * @author Mauger
  * @version V1.0.0
  */
 public interface UserService 
