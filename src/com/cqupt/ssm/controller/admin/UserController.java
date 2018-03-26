@@ -7,8 +7,7 @@ import com.cqupt.ssm.controller.WebCommonController;
 
 /**
  * User后台控制器
- * @author wuMaoZheng
- * @date 2017年11月17日 下午6:20:44
+ * @author Mauger
  * @version V1.0.0
  */
 @Controller
